@@ -1,0 +1,176 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Helvetica, sans-serif;
+  width: 100%;
+}
+
+body {
+  background-color: white; 
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+h1 {
+  text-align: left;
+  color: black;
+  padding-left: 50px;
+}
+
+p {
+  text-align: left;
+  font-size: 20px;
+  padding-left: 50px;
+
+}
+
+#firstimage {
+    display: block;
+    margin-left: auto;
+    margin-top: 0%;
+    margin-right: auto;
+    position: relative;
+}
+
+.row{
+display: flex;
+
+}
+.column{
+  flex: 45%;
+  padding: 5px;
+}
+
+.column {
+  position: relative;
+  width: 50%;
+}
+
+.column img {
+  width: 100%;
+  height: auto;
+}
+
+.survey .btn {
+  position: absolute;
+  top: 120%;
+  left: 20%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: white;
+  color: black;
+  font-size: 25px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 25px;
+  border: 2px solid;
+}
+
+.survey .btn:hover {
+    background-color:grey;
+  }
+
+
+.firstimage .bttn {
+  position: absolute;
+  top: 9%;
+  left: 13%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: white;
+  color: black;
+  font-size: 25px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 25px;
+}
+
+.firstimage .bttn:hover {
+  background-color:grey;
+}
+
+
+.restaurant {
+    width: 40%;
+    float: right;
+    padding-right: 50px;
+}
+
+
+.footer {
+  position: relative;
+  height: 100px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  background-color: rgb(153, 153, 153);
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+       
+  h1 {
+      font-size: 12px;
+  }
+ 
+  .firstimage .bttn {
+  font-size: 6px;
+  padding: 6px 12px;
+  top: 4%;
+  left: 20%;
+  
+  }
+
+  .survey .btn {
+    font-size: 6px;
+    padding: 6px 12px;
+    top: 45%;
+    left: 20%;
+  }
+  p {
+      font-size: 9px;
+      text-align: justify;
+      padding-left: 20px;
+      padding-right: 20px;
+  }
+
+  .restaurant {
+    display: none;
+
+  }
+
+  .flex-container {
+    display: block;
+  }
+
+  .flex-column {
+    width: 100%;
+    margin-bottom: 2em;
+  }
+
+  main {
+    width: auto;
+    border-radius: 0;
+  }
+
+  form {
+    width: 100%;
+  }
+
+  label + * {
+    flex: 0 0 100%;
+    text-align: left;
+    padding: 10px;
+  }
+
+  .button {
+    width: 100%;
+  }
+
+}

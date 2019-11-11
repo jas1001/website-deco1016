@@ -1,0 +1,176 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Helvetica, sans-serif;
+  width: 100%;
+}
+
+body {
+  background-color: white; 
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+h1 {
+  text-align: center;
+  color: black;
+}
+
+p {
+  text-align: center;
+  font-size: 20px;
+  word-spacing: 50px;
+}
+
+#firstimage {
+    display: block;
+    margin-left: auto;
+    margin-top: 0%;
+    margin-right: auto;
+    position: relative;
+}
+
+.row{
+display: flex;
+
+}
+.column{
+  flex: 45%;
+  padding: 5px;
+}
+
+.column {
+  position: relative;
+  width: 50%;
+}
+
+.column img {
+  width: 100%;
+  height: auto;
+}
+
+.firstimage .btn {
+  position: absolute;
+  top: 56.5%;
+  left: 43%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: white;
+  color: black;
+  font-size: 25px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 25px;
+}
+
+.firstimage .btn:hover {
+  background-color:grey;
+}
+
+
+.column .bttn {
+  position: absolute;
+  top: 79%;
+  left: 70%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: white;
+  color: black;
+  font-size: 25px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 25px;
+}
+
+.column .bttn:hover {
+  background-color:grey;
+}
+
+
+.footer {
+  position: relative;
+  height: 100px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  background-color: rgb(211, 210, 210);
+  text-align: center;
+}
+@media (max-width: 768px) {
+  .flex-container {
+    display: block;
+  }
+
+  .flex-column {
+    width: 100%;
+    margin-bottom: 2em;
+  }
+}
+
+@media (max-width: 768px) {
+       
+  h1 {
+      font-size: 12px;
+  }
+ 
+  .firstimage .btn {
+  font-size: 6px;
+  padding: 4px 10px;
+  top: 14%;
+  left: 45%;
+  
+  }
+
+
+  .column .bttn {
+    top: 79%;
+    left: 70%;
+    font-size: 6px;
+    padding: 4px 10px;
+
+  }
+
+  p {
+      font-size: 9px;
+      text-align: center;
+      padding-left: 20px;
+      padding-right: 20px;
+      word-spacing: 10px;
+
+  }
+
+  .flex-container {
+    display: block;
+  }
+
+  .flex-column {
+    width: 100%;
+    margin-bottom: 2em;
+  }
+
+  main {
+    width: auto;
+    border-radius: 0;
+  }
+
+  form {
+    width: 100%;
+  }
+
+  label + * {
+    flex: 0 0 100%;
+    text-align: left;
+    padding: 10px;
+  }
+
+  .button {
+    width: 100%;
+  }
+
+}
